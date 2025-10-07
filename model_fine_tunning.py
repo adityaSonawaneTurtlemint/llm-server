@@ -10,7 +10,9 @@ from transformers import (
 import os
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training  # <-- NEW
 from torch.utils.data import Dataset
-os.environ["HUGGINGFACE_HUB_TOKEN"] = "test"
+from dotenv import load_dotenv
+load_dotenv() 
+hf_token = os.environ.get("HUGGINGFACE_HUB_TOKEN")
 
 # ================= NEW DATASET CLASS FOR FINE-TUNING =================
 class VulnerabilityFixDataset(Dataset):
@@ -68,7 +70,7 @@ class VulnerabilityFixerModel:
         #     bnb_4bit_compute_dtype=torch.bfloat16
         # )
         local_model_path = "../models/" + model_name
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir=local_model_path, use_auth_token=os.environ["HUGGINGFACE_HUB_TOKEN"])
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name, cache_dir=local_model_path, use_auth_token=hf_token)
         self.tokenizer.pad_token = self.tokenizer.eos_token
         
         # Load pre-trained model
@@ -77,7 +79,7 @@ class VulnerabilityFixerModel:
             device_map="auto",
             trust_remote_code=True,
             cache_dir=local_model_path,
-            use_auth_token=os.environ["HUGGINGFACE_HUB_TOKEN"]
+            use_auth_token=hf_token
         )
 
         # ================== NEW: PREPARE MODEL FOR LORA ==================

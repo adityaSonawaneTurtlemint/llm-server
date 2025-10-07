@@ -29,10 +29,13 @@ Automatically detect and fix vulnerabilities in source code using Large Language
 ```bash
 pip install -r required-dependacies.txt
 python3.11 -m main2.py
+```
 
+FastApi Server
 
-```fastapi-server
+```bash
 python3.11 -m venv venv
 source venv/bin/activate
 pip install fastapi uvicorn
 uvicorn main:app --reload  
+```

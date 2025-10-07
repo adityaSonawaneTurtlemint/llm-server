@@ -12,3 +12,4 @@ venv
 *.tar.gz
 fixes.json
 .DS_Store
+.env
