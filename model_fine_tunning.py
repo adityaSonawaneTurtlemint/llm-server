@@ -10,7 +10,7 @@ from transformers import (
 import os
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training  # <-- NEW
 from torch.utils.data import Dataset
-os.environ["HUGGINGFACE_HUB_TOKEN"] = "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"
+os.environ["HUGGINGFACE_HUB_TOKEN"] = "test"
 
 # ================= NEW DATASET CLASS FOR FINE-TUNING =================
 class VulnerabilityFixDataset(Dataset):
