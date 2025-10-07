@@ -1,0 +1,14 @@
+patches
+grid-based-flows
+__pycache__
+env
+venv
+*.log
+*.ckpt
+*.pth
+*.bin
+*.h5
+*.zip
+*.tar.gz
+fixes.json
+.DS_Store

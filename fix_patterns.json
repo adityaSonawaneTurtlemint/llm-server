@@ -1,0 +1,50 @@
+[
+  {
+    "vuln_type": "SQL Injection",
+    "cwe": "CWE-89",
+    "pattern": "String concatenation in SQL query",
+    "fix_description": "Use PreparedStatement with parameterized queries",
+    "example_before": "String query = \"SELECT * FROM users WHERE id = \" + userId;\nStatement stmt = connection.createStatement();\nResultSet rs = stmt.executeQuery(query);",
+    "example_after": "String query = \"SELECT * FROM users WHERE id = ?\";\nPreparedStatement pstmt = connection.prepareStatement(query);\npstmt.setString(1, userId);\nResultSet rs = pstmt.executeQuery();"
+  },
+  {
+    "vuln_type": "XSS (Cross-Site Scripting)",
+    "cwe": "CWE-79",
+    "pattern": "Unescaped user input in HTML",
+    "fix_description": "Use proper HTML escaping and sanitization",
+    "example_before": "String userInput = request.getParameter(\"name\");\nresponse.getWriter().write(\"<div>\" + userInput + \"</div>\");",
+    "example_after": "String userInput = request.getParameter(\"name\");\nString escaped = StringEscapeUtils.escapeHtml4(userInput);\nresponse.getWriter().write(\"<div>\" + escaped + \"</div>\");"
+  },
+  {
+    "vuln_type": "Path Traversal",
+    "cwe": "CWE-22",
+    "pattern": "Unvalidated file path from user input",
+    "fix_description": "Validate and sanitize file paths",
+    "example_before": "String filename = request.getParameter(\"file\");\nFile file = new File(\"/uploads/\" + filename);\nFileInputStream fis = new FileInputStream(file);",
+    "example_after": "String filename = request.getParameter(\"file\");\n// Validate filename\nif (filename.contains(\"..\") || filename.contains(\"/\")) {\n    throw new SecurityException(\"Invalid filename\");\n}\nFile file = new File(\"/uploads/\" + filename);\n// Verify file is within allowed directory\nif (!file.getCanonicalPath().startsWith(\"/uploads/\")) {\n    throw new SecurityException(\"Path traversal detected\");\n}\nFileInputStream fis = new FileInputStream(file);"
+  },
+  {
+    "vuln_type": "Insecure Deserialization",
+    "cwe": "CWE-502",
+    "pattern": "Deserializing untrusted data",
+    "fix_description": "Use safe deserialization with validation",
+    "example_before": "ObjectInputStream ois = new ObjectInputStream(inputStream);\nObject obj = ois.readObject();",
+    "example_after": "// Use a validating ObjectInputStream\nValidatingObjectInputStream ois = new ValidatingObjectInputStream(inputStream);\nois.accept(AllowedClass.class, AnotherAllowedClass.class);\nObject obj = ois.readObject();"
+  },
+  {
+    "vuln_type": "Hardcoded Credentials",
+    "cwe": "CWE-798",
+    "pattern": "Password or API key in source code",
+    "fix_description": "Use environment variables or secure configuration",
+    "example_before": "String password = \"admin123\";\nString apiKey = \"sk-1234567890abcdef\";\nconnection.setPassword(password);",
+    "example_after": "String password = System.getenv(\"DB_PASSWORD\");\nString apiKey = System.getenv(\"API_KEY\");\nif (password == null || apiKey == null) {\n    throw new IllegalStateException(\"Required credentials not found\");\n}\nconnection.setPassword(password);"
+  },
+  {
+    "vuln_type": "Weak Cryptography",
+    "cwe": "CWE-327",
+    "pattern": "Using weak encryption algorithms",
+    "fix_description": "Use strong, modern encryption algorithms",
+    "example_before": "MessageDigest md = MessageDigest.getInstance(\"MD5\");\nbyte[] hash = md.digest(password.getBytes());",
+    "example_after": "// Use SHA-256 or better, with proper salt\nSecureRandom random = new SecureRandom();\nbyte[] salt = new byte[16];\nrandom.nextBytes(salt);\nMessageDigest md = MessageDigest.getInstance(\"SHA-256\");\nmd.update(salt);\nbyte[] hash = md.digest(password.getBytes(StandardCharsets.UTF_8));"
+  }
+]

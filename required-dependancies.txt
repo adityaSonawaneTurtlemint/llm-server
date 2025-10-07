@@ -1,0 +1,17 @@
+transformers
+accelerate
+bitsandbytes
+torch
+torchvision
+torchaudio
+sentence-transformers
+faiss-cpu
+javalang
+tree-sitter
+tree-sitter-java
+langchain
+chromadb
+peft
+trl
+datasets
+gitpython

@@ -1,0 +1,493 @@
+{
+    "version": "1.139.0",
+    "results": [
+        {
+            "check_id": "java.lang.security.audit.unsafe-reflection.unsafe-reflection",
+            "path": "grid-based-flows/src/main/java/com/sachetProduct/service/impl/DefaultAggregatorServiceImpl.java",
+            "start": {
+                "line": 118,
+                "col": 130,
+                "offset": 5603
+            },
+            "end": {
+                "line": 118,
+                "col": 225,
+                "offset": 5698
+            },
+            "extra": {
+                "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+                "metadata": {
+                    "cwe": [
+                        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+                    ],
+                    "owasp": [
+                        "A03:2021 - Injection"
+                    ],
+                    "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+                    "category": "security",
+                    "technology": [
+                        "java"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A03_2021-Injection"
+                    ],
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "likelihood": "LOW",
+                    "impact": "LOW",
+                    "confidence": "LOW",
+                    "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ],
+                    "source": "https://semgrep.dev/r/java.lang.security.audit.unsafe-reflection.unsafe-reflection",
+                    "shortlink": "https://sg.run/R8X8"
+                },
+                "severity": "WARNING",
+                "fingerprint": "requires login",
+                "lines": "requires login",
+                "validation_state": "NO_VALIDATOR",
+                "engine_kind": "OSS"
+            }
+        },
+        {
+            "check_id": "java.lang.security.audit.unsafe-reflection.unsafe-reflection",
+            "path": "grid-based-flows/src/main/java/com/sachetProduct/service/impl/DefaultAggregatorServiceImpl.java",
+            "start": {
+                "line": 135,
+                "col": 120,
+                "offset": 6782
+            },
+            "end": {
+                "line": 135,
+                "col": 206,
+                "offset": 6868
+            },
+            "extra": {
+                "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+                "metadata": {
+                    "cwe": [
+                        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+                    ],
+                    "owasp": [
+                        "A03:2021 - Injection"
+                    ],
+                    "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+                    "category": "security",
+                    "technology": [
+                        "java"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A03_2021-Injection"
+                    ],
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "likelihood": "LOW",
+                    "impact": "LOW",
+                    "confidence": "LOW",
+                    "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ],
+                    "source": "https://semgrep.dev/r/java.lang.security.audit.unsafe-reflection.unsafe-reflection",
+                    "shortlink": "https://sg.run/R8X8"
+                },
+                "severity": "WARNING",
+                "fingerprint": "requires login",
+                "lines": "requires login",
+                "validation_state": "NO_VALIDATOR",
+                "engine_kind": "OSS"
+            }
+        },
+        {
+            "check_id": "java.lang.security.audit.unsafe-reflection.unsafe-reflection",
+            "path": "grid-based-flows/src/main/java/com/sachetProduct/service/impl/DefaultAggregatorServiceImpl.java",
+            "start": {
+                "line": 176,
+                "col": 91,
+                "offset": 9181
+            },
+            "end": {
+                "line": 176,
+                "col": 166,
+                "offset": 9256
+            },
+            "extra": {
+                "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+                "metadata": {
+                    "cwe": [
+                        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+                    ],
+                    "owasp": [
+                        "A03:2021 - Injection"
+                    ],
+                    "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+                    "category": "security",
+                    "technology": [
+                        "java"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A03_2021-Injection"
+                    ],
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "likelihood": "LOW",
+                    "impact": "LOW",
+                    "confidence": "LOW",
+                    "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ],
+                    "source": "https://semgrep.dev/r/java.lang.security.audit.unsafe-reflection.unsafe-reflection",
+                    "shortlink": "https://sg.run/R8X8"
+                },
+                "severity": "WARNING",
+                "fingerprint": "requires login",
+                "lines": "requires login",
+                "validation_state": "NO_VALIDATOR",
+                "engine_kind": "OSS"
+            }
+        },
+        {
+            "check_id": "java.lang.security.audit.unsafe-reflection.unsafe-reflection",
+            "path": "grid-based-flows/src/main/java/com/sachetProduct/service/impl/IssuanceServiceV2Impl.java",
+            "start": {
+                "line": 107,
+                "col": 87,
+                "offset": 4523
+            },
+            "end": {
+                "line": 107,
+                "col": 162,
+                "offset": 4598
+            },
+            "extra": {
+                "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+                "metadata": {
+                    "cwe": [
+                        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+                    ],
+                    "owasp": [
+                        "A03:2021 - Injection"
+                    ],
+                    "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+                    "category": "security",
+                    "technology": [
+                        "java"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A03_2021-Injection"
+                    ],
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "likelihood": "LOW",
+                    "impact": "LOW",
+                    "confidence": "LOW",
+                    "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ],
+                    "source": "https://semgrep.dev/r/java.lang.security.audit.unsafe-reflection.unsafe-reflection",
+                    "shortlink": "https://sg.run/R8X8"
+                },
+                "severity": "WARNING",
+                "fingerprint": "requires login",
+                "lines": "requires login",
+                "validation_state": "NO_VALIDATOR",
+                "engine_kind": "OSS"
+            }
+        },
+        {
+            "check_id": "java.lang.security.audit.unsafe-reflection.unsafe-reflection",
+            "path": "grid-based-flows/src/main/java/com/sachetProduct/service/impl/ProposalServiceV2Impl.java",
+            "start": {
+                "line": 135,
+                "col": 92,
+                "offset": 6519
+            },
+            "end": {
+                "line": 135,
+                "col": 167,
+                "offset": 6594
+            },
+            "extra": {
+                "message": "If an attacker can supply values that the application then uses to determine which class to instantiate or which method to invoke, the potential exists for the attacker to create control flow paths through the application that were not intended by the application developers. This attack vector may allow the attacker to bypass authentication or access control checks or otherwise cause the application to behave in an unexpected manner.",
+                "metadata": {
+                    "cwe": [
+                        "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"
+                    ],
+                    "owasp": [
+                        "A03:2021 - Injection"
+                    ],
+                    "source-rule-url": "https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection",
+                    "category": "security",
+                    "technology": [
+                        "java"
+                    ],
+                    "references": [
+                        "https://owasp.org/Top10/A03_2021-Injection"
+                    ],
+                    "subcategory": [
+                        "audit"
+                    ],
+                    "likelihood": "LOW",
+                    "impact": "LOW",
+                    "confidence": "LOW",
+                    "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+                    "vulnerability_class": [
+                        "Improper Authorization"
+                    ],
+                    "source": "https://semgrep.dev/r/java.lang.security.audit.unsafe-reflection.unsafe-reflection",
+                    "shortlink": "https://sg.run/R8X8"
+                },
+                "severity": "WARNING",
+                "fingerprint": "requires login",
+                "lines": "requires login",
+                "validation_state": "NO_VALIDATOR",
+                "engine_kind": "OSS"
+            }
+        }
+    ],
+    "errors": [
+        {
+            "code": 3,
+            "level": "warn",
+            "type": "Syntax error",
+            "message": "Syntax error at line model.py:59:\n missing element",
+            "path": "model.py"
+        }
+    ],
+    "paths": {
+        "scanned": [
+            "grid-based-flows/build.gradle",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/IssuanceRequest.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/IssuanceResult.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/PaymentRequest.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/PaymentResult.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/PersonalDetails.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/PolicyDetails.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/ProposalRequest.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/ProposalResponse.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/ProposalResult.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/QuotationRequest.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/QuotationResponse.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/QuotationResult.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/RegisteredAddress.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/mobile/MobileIssuanceResult.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/mobile/MobileOtherDetails.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/mobile/MobilePolicyDetails.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/mobile/MobileProposalRequest.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/mobile/MobileProposalResult.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/rsa/RsaIssuanceResult.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/rsa/RsaOtherDetails.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/rsa/RsaPolicyDetails.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/rsa/RsaProposalRequest.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/beans/rsa/RsaProposalResult.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/constants/Constants.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/controllers/SachetController.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/IssuanceRequestRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/IssuanceResultRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/PaymentRequestHistoryRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/PaymentRequestRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/PaymentResultHistoryRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/PaymentResultRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/ProposalRequestHistoryRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/ProposalRequestRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/ProposalResultRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/QuotationRequestRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/QuotationResultRepository.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/IssuanceRequestRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/IssuanceResultRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/PaymentRequestHistoryRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/PaymentRequestRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/PaymentResultHistoryRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/PaymentResultRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/ProposalRequestHistoryRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/ProposalRequestRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/ProposalResultRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/QuotationRequestRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/dao/impl/QuotationResultRepositoryImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/DefaultAggregatorService.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/IIssuanceAggregatorV2Factory.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/IIssuanceService.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/IPaymentAggregatorFactory.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/IPaymentService.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/IProposalService.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/IQuotationService.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/ISachetProductAggregator.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/ISachetProductAggregatorFactory.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/ISachetQuoteValidator.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/IssuanceAggregatorV2.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/PaymentAggregator.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/aggregator/SachetMobileAggregator.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/aggregator/SachetRsaAggregator.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/aggregator/SachetShopAggregator.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/impl/DefaultAggregatorServiceImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/impl/IQuotationServiceImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/impl/IssuanceAggregatorV2Factory.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/impl/IssuanceServiceV2Impl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/impl/PaymentAggregatorFactoryV2.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/impl/PaymentServiceV2Impl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/impl/ProposalServiceV2Impl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/impl/SachetQuoteAggregatorFactory.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/service/impl/SachetQuoteValidatorImpl.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/util/APICallerUtil.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/util/IssuePolicyUtil.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/util/PremiumServiceUtil.class",
+            "grid-based-flows/out/production/classes/com/sachetProduct/util/ValidationUtils.class",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/IssuanceRequest.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/IssuanceResult.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/PaymentRequest.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/PaymentResult.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/PersonalDetails.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/PolicyDetails.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/ProposalRequest.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/ProposalResponse.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/ProposalResult.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/QuotationRequest.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/QuotationResponse.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/QuotationResult.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/RegisteredAddress.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/mobile/MobileIssuanceResult.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/mobile/MobileOtherDetails.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/mobile/MobilePolicyDetails.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/mobile/MobileProposalRequest.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/mobile/MobileProposalResult.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/rsa/RsaIssuanceResult.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/rsa/RsaOtherDetails.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/rsa/RsaPolicyDetails.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/rsa/RsaProposalRequest.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/beans/rsa/RsaProposalResult.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/constants/Constants.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/controllers/SachetController.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/IssuanceRequestRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/IssuanceResultRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/PaymentRequestHistoryRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/PaymentRequestRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/PaymentResultHistoryRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/PaymentResultRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/ProposalRequestHistoryRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/ProposalRequestRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/ProposalResultRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/QuotationRequestRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/QuotationResultRepository.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/IssuanceRequestRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/IssuanceResultRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/PaymentRequestHistoryRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/PaymentRequestRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/PaymentResultHistoryRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/PaymentResultRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/ProposalRequestHistoryRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/ProposalRequestRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/ProposalResultRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/QuotationRequestRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/dao/impl/QuotationResultRepositoryImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/DefaultAggregatorService.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/IIssuanceAggregatorV2Factory.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/IIssuanceService.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/IPaymentAggregatorFactory.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/IPaymentService.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/IProposalService.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/IQuotationService.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/ISachetProductAggregator.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/ISachetProductAggregatorFactory.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/ISachetQuoteValidator.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/IssuanceAggregatorV2.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/PaymentAggregator.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/aggregator/SachetMobileAggregator.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/aggregator/SachetRsaAggregator.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/aggregator/SachetShopAggregator.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/impl/DefaultAggregatorServiceImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/impl/IQuotationServiceImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/impl/IssuanceAggregatorV2Factory.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/impl/IssuanceServiceV2Impl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/impl/PaymentAggregatorFactoryV2.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/impl/PaymentServiceV2Impl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/impl/ProposalServiceV2Impl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/impl/SachetQuoteAggregatorFactory.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/service/impl/SachetQuoteValidatorImpl.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/util/APICallerUtil.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/util/IssuePolicyUtil.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/util/PremiumServiceUtil.java",
+            "grid-based-flows/src/main/java/com/sachetProduct/util/ValidationUtils.java",
+            "model.py",
+            "required-dependancies.txt"
+        ]
+    },
+    "time": {
+        "rules": [],
+        "rules_parse_time": 0.8876690864562988,
+        "profiling_times": {
+            "config_time": 4.088656902313232,
+            "core_time": 1.9556748867034912,
+            "ignores_time": 0.0007479190826416016,
+            "total_time": 6.045520782470703
+        },
+        "parsing_time": {
+            "total_time": 0.0,
+            "per_file_time": {
+                "mean": 0.0,
+                "std_dev": 0.0
+            },
+            "very_slow_stats": {
+                "time_ratio": 0.0,
+                "count_ratio": 0.0
+            },
+            "very_slow_files": []
+        },
+        "scanning_time": {
+            "total_time": 1.4720203876495361,
+            "per_file_time": {
+                "mean": 0.0038534565121715603,
+                "std_dev": 0.0001936510347916273
+            },
+            "very_slow_stats": {
+                "time_ratio": 0.0,
+                "count_ratio": 0.0
+            },
+            "very_slow_files": []
+        },
+        "matching_time": {
+            "total_time": 0.0,
+            "per_file_and_rule_time": {
+                "mean": 0.0,
+                "std_dev": 0.0
+            },
+            "very_slow_stats": {
+                "time_ratio": 0.0,
+                "count_ratio": 0.0
+            },
+            "very_slow_rules_on_files": []
+        },
+        "tainting_time": {
+            "total_time": 0.0,
+            "per_def_and_rule_time": {
+                "mean": 0.0,
+                "std_dev": 0.0
+            },
+            "very_slow_stats": {
+                "time_ratio": 0.0,
+                "count_ratio": 0.0
+            },
+            "very_slow_rules_on_defs": []
+        },
+        "fixpoint_timeouts": [],
+        "prefiltering": {
+            "project_level_time": 0.0,
+            "file_level_time": 0.0,
+            "rules_with_project_prefilters_ratio": 0.0,
+            "rules_with_file_prefilters_ratio": 0.986105965172286,
+            "rules_selected_ratio": 0.2488576015808324,
+            "rules_matched_ratio": 0.2488576015808324
+        },
+        "targets": [],
+        "total_bytes": 0,
+        "max_memory_bytes": 1112945792
+    },
+    "engine_requested": "OSS",
+    "skipped_rules": []
+}
